@@ -1,0 +1,24 @@
+@import "../../../styles/base/_settings.css";
+@import "../../../styles/utils/_helpers.css";
+
+.root {
+  position: relative;
+  cursor: pointer;
+}
+
+.hiddenText {
+  z-index: 99;
+  position: fixed;
+  max-width: 250px;
+  padding: 0.4em;
+  background: color(var(--grey-darken) shade(20%) a(0.9));
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.text {
+  @apply --highlight;
+  @apply --link;
+}
